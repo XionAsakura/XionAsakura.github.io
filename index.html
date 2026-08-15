@@ -1,47 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruben Rodriguez | Computer Science ePortfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ruben Rodriguez CS 499 Computer Science Capstone ePortfolio">
+  <title>Ruben Rodriguez | CS 499 ePortfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Ruben Rodriguez</h1>
-    <h2>Computer Science ePortfolio</h2>
-    <p>
-      Welcome to my CS 499 ePortfolio. This portfolio will showcase my growth in
-      software engineering and design, algorithms and data structures, and databases.
-    </p>
-  </header>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">Ruben Rodriguez</a>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="code-review.html">Code Review</a>
+      <a href="software-design.html">Software Design</a>
+      <a href="algorithms.html">Algorithms</a>
+      <a href="databases.html">Databases</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">CS 499 Computer Science Capstone</div>
+    <h1>Computer Science ePortfolio</h1>
+    <p class="lead">I am Ruben Rodriguez, a computer science student with a strong interest in gameplay programming and software engineering. This portfolio presents my capstone work and the growth I have made in software design, algorithms and data structures, databases, testing, security, collaboration, and technical communication.</p>
+    <div class="actions">
+      <a class="button primary" href="#self-assessment">Read Professional Self-Assessment</a>
+      <a class="button" href="code-review.html">View Code Review</a>
+    </div>
+  </section>
 
-  <main>
-    <section>
-      <h2>About This Portfolio</h2>
-      <p>
-        This ePortfolio includes original and enhanced artifacts from my Computer Science
-        coursework at Southern New Hampshire University. The goal of this portfolio is to
-        demonstrate my technical growth, problem-solving ability, communication skills,
-        and readiness for software development and game development-related career paths.
-      </p>
-    </section>
+  <section id="self-assessment">
+    <div class="eyebrow">Professional Self-Assessment</div>
+    <h2>Growth Across the Computer Science Program</h2>
+    <div class="content-block">
+      <p>Completing my computer science coursework and developing this ePortfolio gave me a chance to look at my work as one body of experience instead of as separate assignments. Earlier in the program, I focused heavily on getting programs to work. As I moved through more advanced courses, I became more concerned with how software is structured, how it can be tested, how data is managed, how security should be considered, and how other developers or stakeholders will understand the decisions behind the code.</p>
+      <p>My main career goal is gameplay programming, although the program also made me more open to software engineering roles. Game development has remained important to me because I enjoy building systems that combine technical problem-solving with interactive experiences. Projects in Python, Java, C++, Unreal Engine, full-stack development, graphics, testing, artificial intelligence, and databases gave me a wider view of the field and helped me understand that strong fundamentals matter across specialties.</p>
+      <p>Team-based work was one of the areas that helped me grow outside of individual programming. In digital game development, I worked as a project manager/producer and developer on a team project. That required organizing work, communicating through shared tools, tracking features and testing, and making decisions when scope or implementation changed. The experience showed me that a working technical solution is only one part of a successful project. A team also needs clear communication, shared expectations, and a way to make decisions when priorities compete.</p>
+      <p>Communication became more important as the program progressed. I have written design documents, project reflections, testing plans, technical narratives, and this capstone code review. The code review required me to explain existing functionality, identify weaknesses, and justify planned enhancements in a way another developer could follow. The artifact narratives required a different kind of communication because they connect technical details to the reason each change matters. Together, those experiences strengthened my ability to adjust technical explanations to the audience and purpose.</p>
+      <p>Data structures and algorithms became more meaningful when I could connect them to a feature instead of treating them only as theory. In the Zelda-inspired text game, the room map naturally forms a graph. For the algorithms enhancement, I used breadth-first search to create a hint system that finds a shortest path toward a missing item or the final encounter. A queue, visited set, predecessor mapping, and deterministic direction order support the search. That enhancement helped me evaluate why BFS fits an unweighted graph and how an algorithm can improve gameplay without taking control away from the player.</p>
+      <p>My database work is represented by Travlr Getaways, a full-stack application using Express, Angular, MongoDB, Mongoose, and a REST API. The capstone enhancement strengthened schema validation, data types, indexes, filtering, CRUD behavior, authentication error handling, and testing. That work made the relationship between the database, API, and user interface much clearer. It also reinforced that decisions at the data layer can affect every other part of an application.</p>
+      <p>Security became part of my development process rather than something I considered only at the end. Across the capstone, I used safer input handling, validation, controlled error responses, JWT-protected operations, restricted CORS origins, and query allowlists. I also saw how small implementation details can expose unnecessary information, such as raw database errors returned to a user. Correcting those problems helped me build a stronger security mindset around validation, access control, error handling, and protecting application internals.</p>
+      <p>The artifacts in this portfolio fit together as a progression. The software design enhancement shows how I can take an early project and reorganize it into a more maintainable structure. The algorithms enhancement builds on that improved structure with graph traversal, a practical search feature, data-structure choices, validation, and automated testing. The database enhancement demonstrates full-stack development and secure data management across several application layers. The code review connects the starting point to the final work and explains why the enhancements were selected.</p>
+      <p>As I complete my degree, I see this portfolio as evidence that I can do more than write code that produces the expected output. I can review an existing system, identify weaknesses, choose practical improvements, test the results, explain trade-offs, and communicate why those decisions matter. Those are skills I plan to continue developing as I move toward gameplay programming and software engineering roles.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Artifact Categories</h2>
-      <ul>
-        <li>Software Engineering and Design</li>
-        <li>Algorithms and Data Structures</li>
-        <li>Databases</li>
-      </ul>
-    </section>
+  <section>
+    <div class="eyebrow">Capstone Work</div>
+    <h2>Portfolio Categories</h2>
+    <div class="card-grid">
+      <article class="card">
+        <span class="status">Complete</span>
+        <h3>Software Design &amp; Engineering</h3>
+        <p>Zelda-inspired Python text game refactored with object-oriented design, clearer state ownership, normalized commands, focused methods, improved validation, and a controlled replay loop.</p>
+        <a href="software-design.html">Explore enhancement →</a>
+      </article>
+      <article class="card">
+        <span class="status">Complete</span>
+        <h3>Algorithms &amp; Data Structures</h3>
+        <p>The same game was expanded with breadth-first search, graph validation, set-based inventory, deterministic traversal, automated tests, and a player-facing hint system.</p>
+        <a href="algorithms.html">Explore enhancement →</a>
+      </article>
+      <article class="card">
+        <span class="status">Complete</span>
+        <h3>Databases</h3>
+        <p>Travlr Getaways was strengthened through Mongoose validation, consistent data types, indexing, filtering, CRUD improvements, safer authentication behavior, and controlled error handling.</p>
+        <a href="databases.html">Explore enhancement →</a>
+      </article>
+    </div>
+  </section>
 
-    <section>
-      <h2>Planned Enhancements</h2>
-      <p>
-        This site will be updated throughout CS 499 with my code review, artifact narratives,
-        enhanced project files, and professional self-assessment.
-      </p>
-    </section>
-  </main>
+  <section>
+    <div class="eyebrow">Program Outcomes</div>
+    <h2>How the Portfolio Demonstrates the Five Outcomes</h2>
+    <div class="card-grid">
+      <article class="card"><h3>Collaboration</h3><p>Team-based game development, project coordination, shared planning, testing, and communication support collaborative decision-making.</p></article>
+      <article class="card"><h3>Professional Communication</h3><p>The code review, technical narratives, documentation, and portfolio explain technical decisions for different audiences.</p></article>
+      <article class="card"><h3>Algorithms</h3><p>Breadth-first search, graph traversal, sets, queues, deterministic traversal, and complexity analysis show algorithmic problem-solving.</p></article>
+      <article class="card"><h3>Computing Practices</h3><p>Object-oriented design, full-stack development, automated testing, version control, API design, and database tools demonstrate well-founded practices.</p></article>
+      <article class="card"><h3>Security Mindset</h3><p>Input validation, controlled errors, JWT protection, CORS restrictions, query allowlists, and safer data handling reduce avoidable risk.</p></article>
+    </div>
+  </section>
+</main>
+<footer>Ruben Rodriguez · CS 499 Computer Science Capstone · Southern New Hampshire University</footer>
 </body>
 </html>
