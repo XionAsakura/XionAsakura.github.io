@@ -40,6 +40,8 @@ section { padding: 2.25rem 0; }
 .callout { border-left: 4px solid var(--accent-2); background: var(--surface); padding: 1rem 1.2rem; border-radius: .4rem .8rem .8rem .4rem; }
 .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .content-block { background: var(--surface); border: 1px solid var(--border); border-radius: .9rem; padding: 1.35rem; margin: 1rem 0; }
+.video-frame { background: #070d17; border: 1px solid var(--border); border-radius: .9rem; padding: .75rem; overflow: hidden; }
+.video-frame video { display: block; width: 100%; height: auto; max-height: 75vh; border-radius: .55rem; background: #000; }
 ul, ol { padding-left: 1.35rem; }
 code { background: var(--surface-2); padding: .12rem .35rem; border-radius: .3rem; }
 pre { overflow-x: auto; background: #070d17; border: 1px solid var(--border); border-radius: .7rem; padding: 1rem; }
